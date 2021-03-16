@@ -11,16 +11,25 @@
 
 <body>
   <section class="header">
-    <div class="container">
-      <div class="payoff">
-        <h1>Visual design and virtual art</h1>
-        <p>3muwum operates as an art agency. It offers computer generated illustration services for designers,
-        architects and developers.</p>
-        <svg class="bi chevron-down" width="32" height="32">
-          <a href="#intro"><use xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#chevron-down" /></a>
-        </svg>
+    <video autoplay muted loop id="myVideo">
+      <source src="assets/images/intro.mp4" type="video/mp4">
+    </video>
+    <!-- Optional: some overlay text to describe the video -->
+    <div class="content">
+      <div class="container">
+        <div class="payoff">
+          <h1>Visual design and virtual art</h1>
+          <p>3muwum operates as an art agency. It offers computer generated illustration services for designers,
+          architects and developers.</p>
+          <a class="stretched-link" href="#intro">
+            <svg class="bi chevron-down" width="32" height="32">
+              <use xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#chevron-down" />
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
+
   </section>
   <section id="intro" class="intro container">
     <div class="row">
