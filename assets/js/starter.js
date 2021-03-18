@@ -16,10 +16,11 @@
 // Import just what we need
 
 // If you're importing tooltips or popovers, be sure to include our Popper.js dependency
-// import "../../node_modules/popper.js/dist/popper.min.js";
+import "../../node_modules/popper.js/dist/popper.min.js";
 
 import "../../node_modules/bootstrap/js/dist/util.js";
 import "../../node_modules/bootstrap/js/dist/modal.js";
+import "../../node_modules/owl.carousel/dist/owl.carousel.js";
 
 
 // Get the video
@@ -36,3 +37,35 @@ function myFunction() {
     btn.innerHTML = "Play";
   }
 }
+
+// Owl Carousel
+$('.owl-carousel').owlCarousel({
+  loop:true,
+  margin:40,
+  responsiveClass:true,
+  autoplay:true,
+  autoplayTimeout:5000,
+  // autoplayHoverPause:true,
+  responsive:{
+      0:{
+          items:1,
+          nav:true,
+          loop:true
+      },
+      400:{
+        items:2,
+        nav:false,
+        loop:true
+      },
+      600:{
+          items:3,
+          nav:false,
+          loop:true
+      },
+      1000:{
+          items:4,
+          nav:true,
+          loop:true
+      }
+  }
+})
