@@ -33,7 +33,7 @@
 //
 
 // OWL Carousel
-@import '../node_modules/owl.carousel/src/scss/owl.carousel.scss';
+@import "../node_modules/owl.carousel/src/scss/owl.carousel.scss";
 
 // Toggle global options
 $enable-gradients: true;
@@ -81,14 +81,14 @@ $border-radius: .4rem;
 
 
 //Fonts
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap");
 
 // Colors
-$white: white;
-$black: black;
+$white: #FFFFFF;
+$black: #000000;
 $text-color: #303030;
-$primary-color: red;
-$secondary-color: yellow;
+$primary-color: #404010;
+$secondary-color: #232360;
 
 // Custom styles
 
@@ -162,7 +162,7 @@ p {
 }
 
 .contact {
-  padding: 3rem 0;
+  padding: 3rem 15px;
 }
 
 //Video
@@ -194,4 +194,4 @@ footer {
       margin-left: 2rem;
     } 
   }
-} 
+}
