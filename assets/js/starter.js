@@ -18,9 +18,9 @@
 // If you're importing tooltips or popovers, be sure to include our Popper.js dependency
 import "/assets/js/popper.min.js";
 
-import "../../node_modules/bootstrap/js/dist/util.js";
-import "../../node_modules/bootstrap/js/dist/modal.js";
-import "../../node_modules/owl.carousel/dist/owl.carousel.js";
+import "/assets/js/util.js";
+import "/assets/js/modal.js";
+import "/assets/js/owl.carousel.js";
 
 
 // Get the video
