@@ -16,11 +16,11 @@
 // Import just what we need
 
 // If you're importing tooltips or popovers, be sure to include our Popper.js dependency
-import "/assets/js/popper.min.js";
+import "https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js";
 
-import "/assets/js/util.js";
-import "/assets/js/modal.js";
-import "/assets/js/owl.carousel.js";
+import "https://cdnjs.cloudflare.com/ajax/libs/javascript.util/0.12.12/javascript.util.min.js";
+import "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.2.6/js/bootstrap-modal.js";
+import "https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js";
 
 
 // Get the video
