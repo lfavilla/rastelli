@@ -181,6 +181,20 @@ p {
     top: -5.5rem;
   }
   .item {
+    div {
+      position: relative;
+      span {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 1.25rem;
+        padding: 5px 20px;
+        color: $white;
+        background: rgba(#C4C4C4, .8);
+        font-weight: 700;
+      }    
+    }
     h3 {
       font-size: 1.40rem;
       font-weight: 400;
