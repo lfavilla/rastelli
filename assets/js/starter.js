@@ -9,17 +9,16 @@
 // Import Bootstrap's bundle (all of Bootstrap's JS + Popper.js dependency)
 
 // import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
-
+import "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js";
 
 // Option 2
 //
 // Import just what we need
 
 // If you're importing tooltips or popovers, be sure to include our Popper.js dependency
-import "https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js";
-
-import "https://cdnjs.cloudflare.com/ajax/libs/javascript.util/0.12.12/javascript.util.min.js";
-import "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.2.6/js/bootstrap-modal.js";
+// import "https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.1/umd/popper.min.js";
+// import "https://cdnjs.cloudflare.com/ajax/libs/javascript.util/0.12.12/javascript.util.min.js";
+// import "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.2.6/js/bootstrap-modal.js";
 import "https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js";
 
 
