@@ -54,7 +54,7 @@ $border-radius: .4rem;
 // @import "bootstrap/scss/code";
 @import "bootstrap/scss/grid";
 // @import "bootstrap/scss/tables";
-// @import "bootstrap/scss/forms";
+@import "bootstrap/scss/forms";
 @import "bootstrap/scss/buttons";
 @import "bootstrap/scss/transitions";
 // @import "bootstrap/scss/dropdown";
@@ -191,7 +191,7 @@ p {
         font-size: 1.25rem;
         padding: 5px 20px;
         color: $white;
-        background: rgba(#C4C4C4, .8);
+        background: rgba(#C4C4C4, .5);
         font-weight: 700;
       }    
     }
@@ -208,8 +208,29 @@ p {
   }
 }
 
+.owl-dots {
+  display: none;
+}
+.owl-nav {
+  position: relative;
+}
+
+button.owl-prev span, button.owl-next span {
+  position: absolute;
+  font-size: 3rem;
+  color: $white;
+  font-weight: 700;
+  left: 0;
+  top: -10px;
+  opacity: .5;
+}
+button.owl-next span {
+  right: 0;
+  left: unset !important;
+}
+
 .contact {
-  padding: 15vh 15px;
+  padding: 15vh 15px 5vh;
 }
 
 //Video
