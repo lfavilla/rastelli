@@ -57,12 +57,12 @@ $border-radius: .4rem;
 @import "bootstrap/scss/forms";
 @import "bootstrap/scss/buttons";
 @import "bootstrap/scss/transitions";
-// @import "bootstrap/scss/dropdown";
+@import "bootstrap/scss/dropdown";
 // @import "bootstrap/scss/button-group";
 // @import "bootstrap/scss/input-group"; // Requires forms
 // @import "bootstrap/scss/custom-forms";
-// @import "bootstrap/scss/nav";
-// @import "bootstrap/scss/navbar"; // Requires nav
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar"; // Requires nav
 @import "bootstrap/scss/card";
 // @import "bootstrap/scss/breadcrumb";
 // @import "bootstrap/scss/pagination";
@@ -103,6 +103,9 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Raleway', sans-serif;
+  a {
+    color: #6c979e;
+  }
 }
 
 // Style Bootstrap icons
@@ -133,12 +136,28 @@ p {
   color: $text-color;
 }
 
+section.navbar-section {
+  top: 0;
+}
+nav.navbar {
+  z-index: 2;
+  padding: 1rem 0;
+  margin: 0;
+  width: 100%;
+  position: fixed;
+  background-color: $white;
+  a.nav-link {
+    margin-right: 2rem;
+  }
+}
+
 .header {
   object-fit: cover;
   background-color: black;
   color: white;
   height: 80vh;
   position: relative;
+  top: 2rem;
   .payoff {
     position: absolute;
     margin: 20vh auto 0;
@@ -154,9 +173,27 @@ p {
   }
 }
 
+.btn-primary {
+  background: #17a2b8 linear-gradient(150deg, #545b62, #17a2b8) repeat-x;
+  border-color: #6c979e;
+  &:hover {
+    background: #0f6875 linear-gradient(150deg, #545b62, #05505c) repeat-x;
+    border-color: #6c979e;
+  }
+}
+
 .intro {
   margin: 15vh auto;
-  scroll-margin: 50px 0 0 0;
+  scroll-margin: 7rem 0 0 0;
+}
+.contact {
+  padding: 0vh 15px;
+  margin: 15vh auto 5vh;
+  scroll-margin: 7rem 0 0 0;
+}
+.work {
+  margin: 15vh auto;
+  scroll-margin: 9rem 0 0 0;
 }
 
 .work {
@@ -227,10 +264,6 @@ button.owl-prev span, button.owl-next span {
 button.owl-next span {
   right: 0;
   left: unset !important;
-}
-
-.contact {
-  padding: 15vh 15px 5vh;
 }
 
 //Video
