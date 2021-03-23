@@ -68,3 +68,18 @@ $('.owl-carousel').owlCarousel({
       }
   }
 })
+
+// Change class on vertical scroll
+$(function() {
+  //caches a jQuery object containing the header element
+  var header = $(".bg1");
+  $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+
+      if (scroll >= 150) {
+          header.removeClass('bg1').addClass("bg2");
+      } else {
+          header.removeClass("bg2").addClass('bg1');
+      }
+  });
+});
