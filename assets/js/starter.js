@@ -9,6 +9,7 @@
 // Import Bootstrap's bundle (all of Bootstrap's JS + Popper.js dependency)
 
 // import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
+import "https://cdn.jsdelivr.net/gh/englishextra/img-lightbox@latest/img-lightbox.min.js";
 import "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js";
 
 // Option 2
@@ -20,7 +21,7 @@ import "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.mi
 // import "https://cdnjs.cloudflare.com/ajax/libs/javascript.util/0.12.12/javascript.util.min.js";
 // import "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.2.6/js/bootstrap-modal.js";
 import "https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js";
-
+// import "https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.js";
 
 // Get the video
 var video = document.getElementById("myVideo");
@@ -83,3 +84,27 @@ $(function() {
       }
   });
 });
+
+// img-Lightbox
+imgLightbox("img-lightbox-link");
+
+// module.exports = {
+//   // .. configuration
+//   module: { 
+//     rules: [
+//       // .. other rules
+//       {
+//         test: /\.(svg|jpeg|gif|png|jpg)$/, // lightbox2 requires png and gif images to be imported
+//                                            // ensure `node_modules` folder is not excluded
+//         use: {
+//           loader: 'file-loader',
+//           options: {
+//             name: "[name].[ext]",
+//             outputPath: "Images"
+//           }
+//         },
+//       },
+//       // .. yet other rules
+//     ]
+//   }
+// }

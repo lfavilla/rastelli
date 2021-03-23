@@ -32,6 +32,9 @@
 // Override Bootstrap here
 //
 
+// img-lightbox
+@import "https://cdn.jsdelivr.net/gh/englishextra/img-lightbox@latest/img-lightbox.min.css";
+
 // OWL Carousel
 @import "https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css";
 
@@ -197,7 +200,7 @@ nav.navbar {
   object-fit: cover;
   background-color: black;
   color: white;
-  height: 95vh;
+  height: 100vh;
   position: relative;
   // top: 2rem;
   .payoff {
@@ -292,6 +295,10 @@ nav.navbar {
 }
 .owl-nav {
   position: relative;
+}
+
+.img-lightbox-container img.animated, .img-lightbox-container.animated {
+  z-index: 3;
 }
 
 button.owl-prev span, button.owl-next span {
