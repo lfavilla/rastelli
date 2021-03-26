@@ -11,6 +11,9 @@
 // import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 import "https://cdn.jsdelivr.net/gh/englishextra/img-lightbox@latest/img-lightbox.min.js";
 import "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js";
+// Bootstrap Form Validator
+// import "https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js";
+
 
 // Option 2
 //
@@ -23,20 +26,6 @@ import "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.mi
 import "https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js";
 // import "https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.js";
 
-// Get the video
-var video = document.getElementById("myVideo");
-// Get the button
-var btn = document.getElementById("myBtn");
-// Pause and play the video, and change the button text
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
-  }
-}
 
 // Owl Carousel
 $('.owl-carousel').owlCarousel({
@@ -88,23 +77,39 @@ $(function() {
 // img-Lightbox
 imgLightbox("img-lightbox-link");
 
-// module.exports = {
-//   // .. configuration
-//   module: { 
-//     rules: [
-//       // .. other rules
-//       {
-//         test: /\.(svg|jpeg|gif|png|jpg)$/, // lightbox2 requires png and gif images to be imported
-//                                            // ensure `node_modules` folder is not excluded
-//         use: {
-//           loader: 'file-loader',
-//           options: {
-//             name: "[name].[ext]",
-//             outputPath: "Images"
-//           }
-//         },
-//       },
-//       // .. yet other rules
-//     ]
-//   }
-// }
+//Contact Form
+const form = document.querySelector("form");
+form.addEventListener("submit", (event) => {
+  // prevent the form submit from refreshing the page
+  event.preventDefault();
+
+  const { name, email, message } = event.target;
+
+	// Use your API endpoint URL you copied from the previous step
+  const endpoint =
+    "https://7wk9opy0d9.execute-api.us-east-2.amazonaws.com/default/sendContactEmail";
+  // We use JSON.stringify here so the data can be sent as a string via HTTP
+	const body = JSON.stringify({
+    senderName: name.value,
+    senderEmail: email.value,
+    message: message.value
+  });
+  const requestOptions = {
+    method: "POST",
+    body
+  };
+
+  fetch(endpoint, requestOptions)
+    .then((response) => {
+      if (!response.ok) throw new Error("Error in fetch");
+      return response.json();
+    })
+    .then((response) => {
+      document.getElementById("result-text").innerText =
+        "Email sent successfully!";
+    })
+    .catch((error) => {
+      document.getElementById("result-text").innerText =
+        "An unkown error occured.";
+    });
+});
