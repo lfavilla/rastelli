@@ -246,11 +246,20 @@ nav.navbar {
 }
 
 .intro {
-  margin: 15vh auto;
-  scroll-margin: 7rem 0 0 0;
-  // background: url(../images/bg_intro.webp) left 100px bottom -50px;
-  // background-repeat: no-repeat;
-  // background-size: contain;
+  padding: 15vh 0;
+  position: relative;
+  // scroll-margin: 7rem 0 0 0;
+  .img-bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(../images/bg_intro_2.jpg) center center;
+    opacity: .05;
+    background-size: cover;
+  }
 }
 .contact {
   padding: 0vh 15px;
@@ -258,7 +267,7 @@ nav.navbar {
   scroll-margin: 7rem 0 0 0;
 }
 .work {
-  margin: 15vh auto;
+  // margin: 15vh auto;
   scroll-margin: 9rem 0 0 0;
 }
 
