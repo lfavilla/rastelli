@@ -1,1 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128.223" height="91.504" viewBox="0 0 128.223 91.504"><defs><linearGradient id="a" x1="1" y1="0.5" x2="0" y2="0.5" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#0c7a91"/><stop offset="1" stop-color="#063d49"/></linearGradient><linearGradient id="b" x1="0.954" y1="0.494" x2="0.003" y2="0.486" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#ffcd00"/><stop offset="1" stop-color="#ffcd00"/></linearGradient></defs><g transform="translate(-1091.094 -257)"><rect width="86.03" height="34" rx="15" transform="translate(1189.872 348.504) rotate(-120)" fill="url(#a)"/><path d="M40,0H61.321a0,0,0,0,1,0,0V38.695a16,16,0,0,1-16,16H0a0,0,0,0,1,0,0V40A40,40,0,0,1,40,0Z" transform="translate(1212.321 316.892) rotate(180)" fill="#fc0"/><rect width="81.03" height="34" rx="17" transform="matrix(-0.53, -0.848, 0.848, -0.53, 1134.033, 344.284)" fill="url(#b)"/><rect width="86.03" height="34" rx="15" transform="translate(1189.872 348.504) rotate(-120)" opacity="0.4" fill="url(#a)"/><rect width="81.03" height="34" rx="17" transform="matrix(-0.53, 0.848, -0.848, -0.53, 1188.223, 275.567)" fill="url(#a)"/><rect width="81.03" height="34" rx="17" transform="matrix(-0.53, -0.848, 0.848, -0.53, 1134.033, 344.284)" opacity="0.4" fill="url(#b)"/><rect width="81.03" height="34" rx="15" transform="translate(1093.454 343.227) rotate(-90)" fill="url(#a)"/><rect width="81.03" height="34" rx="15" transform="translate(1151 343.227) rotate(-90)" fill="url(#a)"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="107" height="151.725" viewBox="0 0 107 151.725">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0.585" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fb0000"/>
+      <stop offset="1" stop-color="#c80000"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" y1="0.322" x2="1" y2="0.337" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff4369"/>
+      <stop offset="1" stop-color="#c12c4a"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_18" data-name="Group 18" transform="translate(-160 -362)">
+    <g id="Group_17" data-name="Group 17" transform="translate(-300 -209.516)">
+      <path id="Subtraction_3" data-name="Subtraction 3" d="M19.714,133H10A10.011,10.011,0,0,1,0,123V10A10.011,10.011,0,0,1,10,0H38V74.3a98.024,98.024,0,0,0-18.3,57.285c0,.467,0,.943.01,1.414Z" transform="translate(460 590)" fill="url(#linear-gradient)"/>
+      <path id="Path_101" data-name="Path 101" d="M4213,305.309l-68.866-131.842v73.814s13.994,36.025,20.254,47.841,15.468,10.186,15.468,10.186Z" transform="translate(-3646 417.856)" fill="#ffc400"/>
+      <path id="Subtraction_2" data-name="Subtraction 2" d="M0,92.267V10A10.011,10.011,0,0,1,10,0H58.865a10.011,10.011,0,0,1,10,10V53.5A98.565,98.565,0,0,0,0,92.265Z" transform="translate(498.134 571.516)" fill="url(#linear-gradient-2)"/>
+      <path id="Intersection_3" data-name="Intersection 3" d="M0,75.317V0L26.215,50.188A98.7,98.7,0,0,0,0,75.317l0,0Z" transform="translate(498.2 589.879)" fill="#f98d00"/>
+    </g>
+  </g>
+</svg>
